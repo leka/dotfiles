@@ -1,0 +1,36 @@
+name: CI
+
+on: [push]
+
+jobs:
+
+  bootstrap_all_dry_run:
+    name: Bootstrap --all --dry-run
+    runs-on: macos-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
+    - name: Test script
+      run: |
+        make test_dry_run
+
+  bootstrap_all_verbose:
+    name: Bootstrap --ci quick
+    runs-on: macos-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
+    - name: Test script
+      run: |
+        make test_quick
+
+
+  bootstrap_test:
+    name: Bootstrap --ci
+    runs-on: macos-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
+    - name: Test script
+      run: |
+        make test

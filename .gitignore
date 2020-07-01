@@ -1,0 +1,56 @@
+### macOS
+
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+Desktop.ini
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+Thumbs.db
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+### ZSH dumps & history
+.zcompdump*
+.zcompcache
+.zhistory
+.zsh_history
+
+### Preferences
+
+# Sublime Text 3
+Package Control.cache/
+Package Control.merged-ca-bundle
+Package Control.system-ca-bundle
+Package Control.user-ca-bundle
+Package Control.last-run
+__pycache__
+*.sublime-workspace
+.SublimeREPLHistory
+Projects/
+*.sublime-license
+oscrypto-ca-bundle.crt
+
+# Rsync backup directory
+_backup
