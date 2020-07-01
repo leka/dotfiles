@@ -53,15 +53,15 @@ echo "›››"
 echo "››› General UI/UX"
 echo "›››"
 
-DATE=$(date +"%Y%m%d")
-COMPUTER_NAME="LadBookPro$DATE"
+# DATE=$(date +"%Y%m%d")
+# COMPUTER_NAME="LadBookPro$DATE"
 
-echo ""
-echo "› Set computer name to $COMPUTER_NAME"
-try sudo scutil --set ComputerName "$COMPUTER_NAME"
-try sudo scutil --set HostName "$COMPUTER_NAME"
-try sudo scutil --set LocalHostName "$COMPUTER_NAME"
-try sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
+# echo ""
+# echo "› Set computer name to $COMPUTER_NAME"
+# try sudo scutil --set ComputerName "$COMPUTER_NAME"
+# try sudo scutil --set HostName "$COMPUTER_NAME"
+# try sudo scutil --set LocalHostName "$COMPUTER_NAME"
+# try sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
 
 echo ""
 echo "› Always show scrollbars"
@@ -94,9 +94,9 @@ echo ""
 echo "› Reveal IP address, hostname, OS version, etc. when clicking the clock" # in the login window
 try sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
-echo ""
-echo "› Disable automatic capitalization"
-try defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+# echo ""
+# echo "› Disable automatic capitalization"
+# try defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
 echo ""
 echo "› Disable smart dashes"
@@ -320,21 +320,21 @@ echo "›››"
 echo "››› Dock, Dashboard & Mission Control"
 echo "›››"
 
-echo ""
-echo "› Wipe all (default) app icons from the Dock" # This is only really useful when setting up a new Mac
-try defaults write com.apple.dock persistent-apps -array
+# echo ""
+# echo "› Wipe all (default) app icons from the Dock" # This is only really useful when setting up a new Mac
+# try defaults write com.apple.dock persistent-apps -array
 
-echo ""
-echo "› Change position of the Dock to right" # Available options: "left" "right" or "bottom"
-try defaults write com.apple.Dock orientation -string right
+# echo ""
+# echo "› Change position of the Dock to right" # Available options: "left" "right" or "bottom"
+# try defaults write com.apple.Dock orientation -string right
 
 echo ""
 echo "› Enable highlight hover effect for the grid view of a stack (Dock)"
 try defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
-echo ""
-echo "› Set the icon size of Dock items to 30 pixels"
-try defaults write com.apple.dock tilesize -int 30
+# echo ""
+# echo "› Set the icon size of Dock items to 30 pixels"
+# try defaults write com.apple.dock tilesize -int 30
 
 echo ""
 echo "› Change minimize/maximize window effect"
@@ -352,11 +352,11 @@ try defaults write com.apple.dock show-process-indicators -bool true
 # echo "› Minimize windows into their application’s icon"
 # try defaults write com.apple.dock minimize-to-application -bool true
 
-echo ""
-echo "› Remove the auto-hiding Dock delay"
-try defaults write com.apple.dock autohide -bool true
-try defaults write com.apple.dock autohide-delay -float 0
-try defaults write com.apple.dock autohide-time-modifier -float 0
+# echo ""
+# echo "› Remove the auto-hiding Dock delay"
+# try defaults write com.apple.dock autohide -bool true
+# try defaults write com.apple.dock autohide-delay -float 0
+# try defaults write com.apple.dock autohide-time-modifier -float 0
 
 echo ""
 echo "› Disable Dashboard"
